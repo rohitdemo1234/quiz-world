@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Quiz World - Play & Win</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      height: 100vh;
+      background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
+      background-size: 300% 300%;
+      animation: gradientShift 15s ease infinite;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    @keyframes gradientShift {
+      0% {background-position: 0% 50%;}
+      50% {background-position: 100% 50%;}
+      100% {background-position: 0% 50%;}
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.15);
+      border-radius: 20px;
+      padding: 40px 30px;
+      width: 90%;
+      max-width: 400px;
+      text-align: center;
+      backdrop-filter: blur(20px);
+      box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+      animation: fadeInUp 1s ease-out;
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    h1 {
+      font-size: 28px;
+      color: #fff;
+      margin-bottom: 15px;
+    }
+
+    p {
+      font-size: 16px;
+      color: #f8f8f8;
+      margin-bottom: 30px;
+    }
+
+    button {
+      background-color: #ffffff;
+      color: #ff7e5f;
+      border: none;
+      padding: 12px 25px;
+      border-radius: 50px;
+      font-size: 16px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    button:hover {
+      background-color: #ff6b81;
+      color: white;
+      transform: scale(1.05);
+    }
+
+    .footer {
+      margin-top: 20px;
+      font-size: 13px;
+      color: #fff;
+      opacity: 0.8;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>Welcome to Quiz World!</h1>
+    <p>Play exciting quizzes. Earn rewards. Challenge your mind.</p>
+    <button onclick="window.location.href='login.html'">Enter Quiz World</button>
+    <div class="footer">© 2025 Quiz World. All rights reserved.</div>
+  </div>
+</body>
+</html>
